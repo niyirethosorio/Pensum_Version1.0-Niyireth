@@ -1,0 +1,14 @@
+<resources>
+    <!-- esta es el id de la aplicacion para que funcione el banner-->
+    <string name="banner_ad_unit_id">ca-app-pub-5527872171596224/9261212597</string>
+
+    <string name="app_name">Pensum_Version1.0</string>
+    <string name="desc1">Lanza programas</string>
+    <string name="desc2">Lanza notificaciones</string>
+    <string name="desc3">Lanza sedes</string>
+    <string name="desc4">Lanza sia</string>
+    <string name="title_activity_sede">sede</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="title_activity_sedes">sedes</string>
+</resources>

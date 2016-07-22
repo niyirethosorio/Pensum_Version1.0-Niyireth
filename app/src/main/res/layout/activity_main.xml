@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    tools:context="happyapps.pensum_version10.MainActivity"
+    android:background="#000000">
+
+
+    <!-- Agregamos el banner de la publicidad
+    los parametros se pueden cambiar como se desee
+    ads:adUnitId="@string/debe llamarse igual en el string.xml
+    usar ads:adSize="SMART_BANNER" para que el banner ocupe el ancho total
+    usar android:background="@android:color/transparent" para eliminar el padding
+    -->
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        ads:adSize="SMART_BANNER"
+        ads:adUnitId="@string/banner_ad_unit_id"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+    </com.google.android.gms.ads.AdView>
+
+    <ImageButton
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:contentDescription="@string/desc1"
+        android:id="@+id/imageButton"
+        android:background="@android:color/transparent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:src="@mipmap/p1"
+        android:onClick="lanzarProgramas" />
+
+    <ImageButton
+        android:layout_width="190dp"
+        android:layout_height="170dp"
+        android:contentDescription="@string/desc2"
+        android:background="@android:color/transparent"
+        android:id="@+id/imageButton2"
+        android:src="@mipmap/p4"
+        android:layout_below="@+id/imageButton"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:onClick="lanzarNotificaciones" />
+
+    <ImageButton
+        android:layout_width="190dp"
+        android:layout_height="170dp"
+        android:contentDescription="@string/desc3"
+        android:id="@+id/imageButton3"
+        android:background="@android:color/transparent"
+        android:layout_alignTop="@+id/imageButton2"
+        android:layout_toRightOf="@+id/imageButton2"
+        android:layout_toEndOf="@+id/imageButton2"
+        android:src="@mipmap/p3"
+        android:onClick="lanzarSedes" />
+
+    <ImageButton
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:contentDescription="@string/desc4"
+        android:id="@+id/imageButton4"
+        android:background="@android:color/transparent"
+        android:layout_below="@+id/imageButton2"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:src="@mipmap/p2"
+        android:onClick="lanzarSia" />
+
+</RelativeLayout>
